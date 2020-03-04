@@ -1,0 +1,8 @@
+备份数据库testdb
+mysqldump -h 192.168.3.143 -u root -p pwd -x --default-character-set=gbk >C:\testdb.sql
+
+恢复testdb数据库
+首先先建立testdb数据库，然后用下面命令进行本地恢复
+mysql -u root -pleizhimin testdb <C:\testdb.sql
+
+
